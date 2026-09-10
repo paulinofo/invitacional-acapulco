@@ -422,8 +422,8 @@ try{
    1. DATOS DEL TORNEO
    ============================================================ */
 const DIAS = 3, HOYOS = 18, NJUG = 4;
-const VERSION = 7;   // sube al cambiar datos base: dispara migrar()
-const ACTUALIZADA='v7 · 9 sep 2026 · 23:45';   // lo sella el script de despliegue en cada publicación
+const VERSION = 8;   // sube al cambiar datos base: dispara migrar()
+const ACTUALIZADA='v8 · 9 sep 2026 · 23:52';   // lo sella el script de despliegue en cada publicación
 
 /* --- Los 4 jugadores --- */
 /* Índices de handicap del torneo (ajuste vs promedio del grupo tras 2 rondas,
@@ -1174,7 +1174,7 @@ const LISTA_SLIDING = [
   {n:'Javier Gordillo',v:0},
   {n:'Vic Reyes',v:2},
   {n:'Paulino Fernández',v:4},
-  {n:'Ramón Quintana',v:7}
+  {n:'Ramón Quintana',v:12}
 ];
 let presRival=null;
 /* Handicap deslizante: golpes pactados entre dos jugadores para un dia.
@@ -1204,7 +1204,7 @@ function valorLista(jid){ const i=idxLista(jug(jid).nombre);
    solo en su teléfono y los demás calculaban distinto contra él (los que no
    figuran en LISTA_SLIDING se evaluaban como cero). Con el mapa todos ven lo
    mismo; un pacto del tee sigue ganando ese día. */
-const SLIDING_PAREJAS = { 'j0|j1':-2, 'j0|j2':-4, 'j0|j3':3 };   /* dictados por Paulino, 9-sep */
+const SLIDING_PAREJAS = { 'j0|j1':-2, 'j0|j2':-4, 'j0|j3':8 };   /* dictados por Paulino, 9-sep */
 /* Golpes que 'a' le da a 'b': el pacto de la pareja si existe;
    si no, la diferencia de valores de la lista. */
 function slidingLista(a,b){
